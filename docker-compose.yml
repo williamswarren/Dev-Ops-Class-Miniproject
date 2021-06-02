@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+
+  db:
+     image: mysql:5.7
+     volumes:
+       - db_data:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: warren
+       MYSQL_DATABASE: miniproject
+       MYSQL_USER: miniproject
+       MYSQL_PASSWORD: miniproject
+
+  web:
+     image: nginx
+     ports:
+       - "8080:80"
+     volumes:
+       - nginx_html:/usr/share/nginx/html/
+
+volumes:
+  nginx_html: {}
+  db_data: {}
+
