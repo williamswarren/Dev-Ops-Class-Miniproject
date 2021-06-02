@@ -16,8 +16,8 @@ vagrant init
 
 cd ..
 
-cp docker-compos.yml vm1 vm2
+cp docker-compos.yml ./vm1/ && cp docker-compos.yml ./vm2/
 
-cp install_docker.sh vm1 vm2
+cp install_docker.sh ./vm1/ && cp install_docker.sh ./vm2/
 
 
