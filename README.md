@@ -12,6 +12,8 @@
 
 6. cd into each vm folder and vagrant up
 
+6.5. vagrant ssh
+
 7. cd into the shared vagrant folder where install_docker.sh and docker-compose.yml are located
 
 8. in each vm run ./install_docker.sh
